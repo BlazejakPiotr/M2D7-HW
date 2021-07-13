@@ -478,10 +478,30 @@
       /*
         JS Exercises
         EX11) Write a function to add a new link into the navbar
-      
-
+      */
+      const addLink = function(){
+        let selectParentNode = document.querySelector('.nav')
+        let addNew = document.createElement('a')
+        addNew.classList.add('p-2', 'text-muted')
+        addNew.innerText = 'hello'
+        selectParentNode.appendChild(addNew)
+      }
+      /*
         EX12) Write a function to change the color of the main title
+      */
+     const changeTitleColor = function(){
+       let selectTitleNode = document.getElementsByTagName('h1')
+       selectTitleNode[0].style.color = 'blue'
+     }
+     /*
         EX13) Write a function to change the background of the jumbotron
+     */
+      const changeBgColor = function(){
+        let changeNodeBgColor = document.querySelector('.jumbotron')
+        changeNodeBgColor.classList.remove('bg-dark')
+        changeNodeBgColor.style.backgroundColor = 'blue'
+      }
+    /*
         EX14) Write a function to remove all the links under "Elsewhere"
         EX15) Write a function to change the column size for heading in jumbotron
         EX16) Write a function to remove the "Search" magnifying glass icon
