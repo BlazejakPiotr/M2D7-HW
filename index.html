@@ -18,7 +18,7 @@
   <head>
     <style>
       /*
-            EX1) Write a selector to target the h1 in jumbotron
+            EX1) Write a selector to target the h1 in jumbotron          
             EX2) Write a selector to target every children of the navbar
             EX3) Write a selector to target the "continue reading..." inside the jumbotron
             EX4) Write a selector to target the first blogpost
@@ -29,6 +29,27 @@
             EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly
             EX10) Write a selector to target the footer
         */
+        .jumbotron h1 {
+            background-color: red !important;
+        }
+        .nav > a {
+            background-color: red;
+        }
+        .jumbotron p a {
+            background-color: red;
+        }
+        .blog-post:first-of-type{
+            background-color: red;
+        }
+        .nav > a:nth-child(even) {
+            background-color: blue;
+        }
+        .blog-post:last-of-type{
+            background-color: red;
+        }
+
+
+
     </style>
     <meta charset="utf-8" />
     <meta
