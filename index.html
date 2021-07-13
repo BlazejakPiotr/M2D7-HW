@@ -503,8 +503,27 @@
       }
     /*
         EX14) Write a function to remove all the links under "Elsewhere"
+        */
+      const deleteElsewhereLinks = function(){
+        let getElsewhereNode = document.querySelectorAll('.list-unstyled')
+        getElsewhereNode[1].innerHTML = ''
+      }
+       /*
         EX15) Write a function to change the column size for heading in jumbotron
+       */
+      const changeJumbotronSize = function(){
+        let getJumbotronNode = document.querySelectorAll('.jumbotron')
+        getJumbotronNode[0].children[0].classList.remove('col-md-6')
+        getJumbotronNode[0].children[0].classList.add('col-md-12')
+      }
+       /*
         EX16) Write a function to remove the "Search" magnifying glass icon
+        */
+      const deleteSearchIcon = function(){
+        let getIconNode = document.querySelectorAll('.justify-content-end')
+        getIconNode[0].children[0].remove()
+      }
+        /*
         EX17) Write a function to trim just the first 50 characters in the first paragraph for each blog post
         EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
         EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
